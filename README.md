@@ -5,7 +5,7 @@
 ![Aperçu du projet desktop](./docs/desktop.png)
 ![Aperçu du projet mobile](./docs/mobile.png)
 
-**🔗 [Demo en ligne]()**
+**🔗 [Demo en ligne](https://front-end-mentor-3-column-preview-c.vercel.app/)**
 
 ---
 
@@ -31,6 +31,5 @@ Cet exercice permet de consolider les bases de HTML et de CSS en utilisant FlexB
 
 **Thomas Bezille** — Développeur web à Nantes
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white)](https://ton-portfolio.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thomas-bezille/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Thomas-Bezille)
