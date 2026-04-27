@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  --sedans-color: hsl(31, 77%, 52%);
+  --suvs-color: hsl(184, 100%, 22%);
+  --luxury-color: hsl(179, 100%, 13%);
+  --paragraph: hsla(0, 0%, 100%, 0.75);
+  --headings: hsl(0, 0%, 95%);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 3rem 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.container p {
+  color: var(--paragraph);
+  line-height: 1.3rem;
+}
+
+.container a {
+  display: inline-block;
+  background: var(--headings);
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 1.5rem 0 0.5rem 0;
+  padding: 0.7rem 1.3rem;
+  border: 1px solid var(--headings);
+  border-radius: 6rem;
+  transition:
+    color 0.2s ease-in-out,
+    background 0.2s ease-in-out;
+}
+
+.container a:hover {
+  color: var(--headings);
+  border: 1px solid var(--headings);
+}
+
+.sedans a {
+  color: var(--sedans-color);
+}
+
+.sedans a:hover {
+  background: var(--sedans-color);
+}
+
+.suvs a {
+  color: var(--suvs-color);
+}
+
+.suvs a:hover {
+  background: var(--suvs-color);
+}
+
+.luxury a {
+  color: var(--luxury-color);
+}
+
+.luxury a:hover {
+  background: var(--luxury-color);
+}
+
+.card {
+  padding: 2rem 2.5rem 2rem 2.5rem;
+}
+
+.sedans {
+  background: var(--sedans-color);
+}
+
+.suvs {
+  background: var(--suvs-color);
+}
+
+.luxury {
+  background: var(--luxury-color);
+}
+
+h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 500;
+  color: var(--headings);
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+
+.attribution {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    margin: 3rem auto;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    flex-direction: row;
+    max-width: 100%;
+    margin: 3rem 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .container p {
+    margin-bottom: 5rem;
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 3rem 3.5rem 3rem 3.5rem;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto 1rem auto;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 80%;
+  }
+}
